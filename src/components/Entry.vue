@@ -33,12 +33,14 @@ export default {
   padding-top: 8px;
   margin: 0 16px 16px;
   background-color: #f5f5f5;
+  text-decoration:none;
 }
 .title {
   margin: 0 8px;
   padding: 8px 16px;
   background-color: rgba(0, 0, 0, 0.02);
   border-bottom: 2px solid #eee;
+  text-decoration:none;
 }
 .body {
   ::v-deep img {
@@ -56,5 +58,8 @@ export default {
 }
 .body {
   padding: 16px;
+}
+a {
+  text-decoration:none;
 }
 </style>

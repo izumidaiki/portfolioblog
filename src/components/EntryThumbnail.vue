@@ -65,5 +65,8 @@ export default {
         height: auto;
     }
 }
+a {
+  text-decoration:none;
+}
 
 </style>
