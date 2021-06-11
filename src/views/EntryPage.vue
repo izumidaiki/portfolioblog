@@ -2,6 +2,9 @@
   <Loading v-if="!entry" />
   <article class="entry-container" v-if="entry">
     <h1 class="entry-title">{{entry.title}}</h1>
+
+    <div class="body" v-html="entry.body">
+    </div>
   </article>
 </template>
 
@@ -11,7 +14,6 @@ import { useStore } from 'vuex'
 import { useRoute } from 'vue-router'
 import Entry from '@/components/Entry.vue'
 import Loading from '@/icon/Loading.vue'
-
 export default {
   components: {
     Entry,
@@ -21,11 +23,9 @@ export default {
     const store = useStore()
     const route = useRoute()
     const getEntry = () => store.dispatch('getEntry', route.params.id)
-    
     onMounted(() => {
       getEntry()
     })
-
     return {
       getEntry,
       entry: computed(() => store.state.entry),
@@ -35,11 +35,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.entry-container{
+.entry-container {
   padding: 64px 12px;
   margin: 0 auto;
   max-width: 896px;
-  & before {
+  &:before {
     margin: 0 auto;
     position: absolute;
     display: block;
@@ -51,7 +51,7 @@ export default {
     right: 0;
     z-index: -2;
   }
-  & after {
+  &:after {
     margin: 0 auto;
     position: absolute;
     display: block;
@@ -63,46 +63,46 @@ export default {
     top: -300px;
     left: 50%;
     right: 0;
-    z-idex: -1;
+    z-index: -1;
   }
 }
-.entry-title{
-  margin: - auto 40px;
-  font-size:24px;
-  position:relative;
-  color:#333;
-  & after {
-    content:'';
-    display:block;
+.entry-title {
+  margin: 0 auto 40px;
+  font-size: 24px;
+  position: relative;
+  color: #333;
+  &:after {
+    content: '';
+    display: block;
     border-bottom: 1px solid #333;
     width: 200px;
   }
 }
 .body {
   ::v-deep img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
-  ::v-deep h2{
-    padding: 8px 16px;
+  ::v-deep h2 {
+    padding: 4px 8px;
     font-size: 20px;
-    border-left: 3px solid#99FF66;
+    border-left: 8px solid #39c;
     &:after {
-      content:'';
-      display:block;
-      border-bottom: 1px solid #99FF66;
+      content: '';
+      display: block;
+      border-bottom: 1px solid #39c;
       width: 300px;
     }
   }
-  ::v-deep h3{
+  ::v-deep h3 {
     padding: 8px 0;
     font-size: 18px;
   }
-  ::v-deep h4{
+  ::v-deep h4 {
     padding: 8px 0;
     font-size: 16px;
   }
-  ::v-deep p{
+  ::v-deep p {
     font-size: 16px;
     margin: 16px 0;
   }
