@@ -68,7 +68,7 @@ export default {
 a {
   text-decoration:none;
   color:#333;
-  font-size:16px;
+  font-size:20px;
   text-align:center;
 }
 

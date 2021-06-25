@@ -32,4 +32,10 @@ export default {
         width: 200px;
     }
 }
+a {
+  text-decoration:none;
+  color:#333;
+  font-size:20px;
+  text-align:center;
+}
 </style>
