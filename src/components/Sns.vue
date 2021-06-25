@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
 .sns {
   padding: 64px 0;
-  background-color: #99FF66;
+  background-color: #99FF99;
   color: #fff;
   position: relative;
   overflow: hidden;

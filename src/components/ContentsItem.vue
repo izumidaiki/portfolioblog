@@ -22,7 +22,7 @@ export default {
 }
 .contents-item-title {
     margin: 0 auto 40px;
-    font-size: 24px;
+    font-size: 20px;
     position: relative;
     color:#333;
     &:after {

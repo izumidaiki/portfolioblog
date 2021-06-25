@@ -13,7 +13,7 @@
 <style lang="scss" scoped>
 .about {
   padding: 16px 0;
-  background-color: #99FF66;
+  background-color: #99FF99;
   color: #fff;
   position: relative;
   min-height: 300px;
