@@ -35,7 +35,7 @@ export default {
 a {
   text-decoration:none;
   color:#333;
-  font-size:20px;
+  font-size:16px;
   text-align:center;
 }
 </style>
