@@ -6,7 +6,7 @@
     </figure>
     <p class="about-name">Izumi Daiki</p>
     <p class="about-birthday">2002 / 03 / 08</p>
-    <p class="about-skill">HTML / CSS / Javascript / Vue / Photoshop / Illustrator</p>
+    <p class="about-skill">HTML / CSS / Javascript / Vue / Photoshop / Illustrator/ Java/ PostgreSQL/ </p>
   </section>
 </template>
 
